@@ -1,34 +1,18 @@
-import { component$, useSignal, $ } from '@builder.io/qwik';
-import styles from './counter.module.css';
-import Gauge from '../gauge';
+import { component$, $, useVisibleTask$ } from '@builder.io/qwik';
+import styles from './celebrate.module.css';
 
-export default component$((props: { initialValue: number }) => {
-  const count = useSignal(props.initialValue);
-
-  const setCount = $((newValue: number) => {
-    if (newValue >= 0 && newValue <= 100) {
-      count.value = newValue;
-
-      if (newValue === 100) {
-        celebrate();
-      }
-    }
-  });
+export default component$(() => {
+  useVisibleTask$( async () => {
+    await celebrateAnimate();
+  })
 
   return (
     <div class={styles.wrapper}>
-      <button class={styles.button} onClick$={() => setCount(count.value - 1)}>
-        -
-      </button>
-      <Gauge value={count.value} />
-      <button class={styles.button} onClick$={() => setCount(count.value + 1)}>
-        +
-      </button>
     </div>
   );
 });
 
-export const celebrate = $(async () => {
+export const celebrateAnimate = $(async () => {
   const defaults = {
     spread: 360,
     ticks: 70,

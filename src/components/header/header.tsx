@@ -7,24 +7,29 @@ export default component$(() => {
     <header class={styles.header}>
       <div class={styles.wrapper}>
         <div class={styles.logo}>
-          <a href="/" title="qwik">
+          <a href="/" title="logo">
             <QwikLogo height={50} width={143} />
           </a>
         </div>
         <ul>
           <li>
-            <a href="https://qwik.builder.io/docs/components/overview/" target="_blank">
-              Docs112
+            <a href="#" target="_blank">
+              Бонусы
             </a>
           </li>
           <li>
-            <a href="https://qwik.builder.io/examples/introduction/hello-world/" target="_blank">
-              Examples
+            <a href="#" target="_blank">
+              Доставка
             </a>
           </li>
           <li>
-            <a href="https://qwik.builder.io/tutorial/welcome/overview/" target="_blank">
-              Tutorials
+            <a href="#" target="_blank">
+              Помощь
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              Отзывы
             </a>
           </li>
         </ul>
