@@ -1,5 +1,5 @@
 import { component$, $, useVisibleTask$ } from '@builder.io/qwik';
-import styles from './celebrate.module.css';
+// import styles from './celebrate.module.css';
 
 export default component$(() => {
   useVisibleTask$( async () => {
@@ -7,8 +7,8 @@ export default component$(() => {
   })
 
   return (
-    <div class={styles.wrapper}>
-    </div>
+    <div>
+     </div>
   );
 });
 

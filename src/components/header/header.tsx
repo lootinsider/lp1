@@ -13,22 +13,22 @@ export default component$(() => {
         </div>
         <ul>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" >
               Бонусы
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" >
               Доставка
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" >
               Помощь
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="#" >
               Отзывы
             </a>
           </li>
